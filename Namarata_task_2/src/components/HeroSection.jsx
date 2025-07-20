@@ -80,7 +80,7 @@ const HeroSection = () => {
             Discover a winter wonderland of joy, shopping, and entertainment. Join thousands of families enjoying holiday deals, food, and festive vibes—book your entry now!
           </p>
 
-          <button className="bg-green-600 px-6 py-3 rounded-full font-semibold text-white flex items-center gap-2 hover:bg-green-700 transition">
+          <button className="bg-blue-500 px-6 py-3 rounded-full font-semibold text-white flex items-center gap-2 hover:bg-blue-700 transition">
             Book Your Spot <FaArrowRight />
           </button>
         </div>
