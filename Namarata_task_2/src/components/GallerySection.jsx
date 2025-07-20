@@ -57,7 +57,7 @@ const GallerySection = () => {
         </p>
       </div>
 
-      {/* Tabs */}
+     
       <div className="flex justify-center gap-4 flex-wrap mb-8">
         {tabs.map((tab) => (
           <button
@@ -74,7 +74,7 @@ const GallerySection = () => {
         ))}
       </div>
 
-      {/* Gallery Cards */}
+     
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {galleryData[selectedTab]?.map((place, idx) => (
           <div

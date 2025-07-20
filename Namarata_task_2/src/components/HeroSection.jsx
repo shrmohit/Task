@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 
-// Holiday-themed background images
+
 
 import hero1 from "../assets/badrinath-banner.webp";
 import hero2 from "../assets/himalay.webp";
 import hero3 from "../assets/rameshwarm-banner.webp";
 
-// Holiday jingle taglines
 const phrases = [
   "Experience the Magic of Holidays",
   "Shop, Celebrate & Create Memories",
   "Your One-Stop Destination for Festive Fun",
 ];
 
-// Background images array
+
 const images = [hero1, hero2, hero3];
 
 const HeroSection = () => {
@@ -23,7 +22,6 @@ const HeroSection = () => {
   const [charIndex, setCharIndex] = useState(0);
   const [bgIndex, setBgIndex] = useState(0);
 
-  // Typewriter effect
   useEffect(() => {
     const currentPhrase = phrases[phraseIndex];
     if (charIndex < currentPhrase.length) {
@@ -42,7 +40,6 @@ const HeroSection = () => {
     }
   }, [charIndex, phraseIndex]);
 
-  // Background slideshow
   useEffect(() => {
     const interval = setInterval(() => {
       setBgIndex((prev) => (prev + 1) % images.length);
@@ -52,7 +49,7 @@ const HeroSection = () => {
 
   return (
     <div className="w-full h-screen relative overflow-hidden text-white">
-      {/* Background images with fade effect */}
+      
       {images.map((img, idx) => (
         <img
           key={idx}
@@ -63,10 +60,10 @@ const HeroSection = () => {
         />
       ))}
 
-      {/* Dark overlay */}
+     
       <div className="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
 
-      {/* Content */}
+      
       <div className="relative z-20 flex items-center justify-center h-full px-4">
         <div className="text-center max-w-3xl">
           <p className="text-4xl font-bold mb-2">Welcome to Jingle Holiday Bazar</p>

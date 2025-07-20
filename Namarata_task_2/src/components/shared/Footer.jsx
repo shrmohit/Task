@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-700 text-white py-12 px-6 md:px-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
 
-        {/* Brand & About */}
+ 
         <div>
           <h2 className="text-2xl font-extrabold mb-4 text-white">Jingle Holiday Bazar</h2>
           <p className="text-sm text-gray-300 leading-relaxed">
@@ -21,7 +21,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Explore */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Explore</h3>
           <ul className="space-y-2 text-sm text-gray-300">
@@ -33,7 +32,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact Info */}
+
         <div>
           <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
           <ul className="space-y-4 text-sm text-gray-300">
@@ -54,7 +53,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Social Media */}
+        
         <div>
           <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
           <div className="flex gap-5 text-white">
@@ -68,7 +67,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Footer */}
+     
       <div className="border-t border-gray-300 mt-12 pt-6 text-center text-sm text-gray-200">
         © {new Date().getFullYear()} Jingle Holiday Bazar Pvt. Ltd. All rights reserved.
       </div>

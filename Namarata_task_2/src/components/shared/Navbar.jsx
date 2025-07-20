@@ -11,7 +11,6 @@ function Navbar() {
     <div className="fixed top-0 w-full z-50 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-500 shadow-md text-black backdrop-blur-md">
       <div className="w-full max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
-        {/* Logo + Brand */}
         <div className="flex items-center space-x-3">
           <img src={Logo} alt="Jingle Holiday Bazar" className="w-12 h-12 rounded-full border-2 border-white shadow-md" />
           <span className="text-2xl md:text-3xl font-extrabold text-white tracking-tight drop-shadow">
@@ -19,7 +18,6 @@ function Navbar() {
           </span>
         </div>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6 text-white font-medium">
           {["Home", "About", "Domestic", "International", "Place", "Package", "Contact Us"].map((item) => (
             <a
@@ -33,14 +31,13 @@ function Navbar() {
           <span className="font-bold text-yellow-200 ml-4">+91-8506922777</span>
         </div>
 
-        {/* Pay Now Button */}
         <div className="hidden md:block">
           <button className="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-2 rounded-full font-semibold shadow-md transition duration-300">
             PAY NOW
           </button>
         </div>
 
-        {/* Mobile Menu Toggle */}
+        
         <div className="md:hidden">
           <button onClick={toggleMobileMenu} className="text-white text-2xl">
             {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
@@ -48,7 +45,7 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      
       {isMobileMenuOpen && (
         <div className="md:hidden bg-gradient-to-b from-blue-300 to-blue-500 px-6 py-4 space-y-3 shadow-md text-white">
           {["Home", "About", "Domestic", "International", "Place", "Package", "Contact Us"].map((item) => (

@@ -5,7 +5,7 @@ import hotel2 from "../assets/hotel1.webp"
 const PopularHotel = () => {
   return (
     <div className="bg-[#e8f1fa] py-10 px-6 md:px-16">
-      {/* Heading */}
+     
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 uppercase">
           Popular Hotels
@@ -15,18 +15,18 @@ const PopularHotel = () => {
         </p>
       </div>
 
-      {/* Hotel Info Section */}
+     
       <div className="grid md:grid-cols-2 gap-6 items-center">
-        {/* Left Image */}
+        
         <img
           src={hotel}
           alt="Taj Aravali Resort"
           className="w-full h-auto rounded-xl shadow-lg"
         />
 
-        {/* Hotel Content and Right Image */}
+       
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Hotel Content */}
+          
           <div>
             <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
               Taj Aravali Resort & Spa
@@ -36,7 +36,7 @@ const PopularHotel = () => {
             </p>
           </div>
 
-          {/* Right Image */}
+          
           <img
             src={hotel2}
             alt="Resort View"
